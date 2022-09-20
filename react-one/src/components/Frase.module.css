@@ -1,0 +1,7 @@
+/* Em css de componentes não podemos criar divs e classes com "-" pois o react entende como subtração.
+Ex: .input-principal. Mas pode com CamelCase ou "_" */
+
+.fraseParagrafos {
+    color: blue;
+    font-size: 50px;
+}

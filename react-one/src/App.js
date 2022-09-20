@@ -3,15 +3,14 @@ import HelloWorld from './components/HelloWorld';
 import Soma from './components/Soma';
 import SayMyName from './components/SayMyName';
 import Pessoa from  './components/Pessoa';
+import Frase from "./components/Frase"
 
 function App() {
 
   const name = "Julinha"
   return (
     <div className='App'>
-      <SayMyName nome="Thomas"/>
-      <SayMyName nome="Mesquitinha"/>
-      <SayMyName nome={name}/>
+      <Frase/>
 
       <Pessoa 
       nome="Thomas" 
