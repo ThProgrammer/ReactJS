@@ -13,6 +13,8 @@ function App() {
     <div className='App'>
       <Frase/>
 
+      <Soma n1={5} n2={23}/>
+
       <Pessoa 
       nome="Thomas" 
       idade="19" 

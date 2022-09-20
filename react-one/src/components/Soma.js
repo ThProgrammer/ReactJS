@@ -1,8 +1,22 @@
-function Soma(props) {
+import PropTypes from "prop-types";
+
+function Soma({n1, n2}) {
     return (
-    <div>
-        <p>{Number(props.n1) + Number(props.n2)}</p>
-    </div>
+    <>
+        {n1 + n2}
+    </>
     )
 }
+
+Soma.propTypes = {
+    n1: PropTypes.number.isRequired,
+    n2: PropTypes.number.isRequired
+}
+
+Soma.defaultProps = {
+    n1: 0, 
+    n2: 0
+}
+
+
 export default Soma;
