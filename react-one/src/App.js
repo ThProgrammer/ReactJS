@@ -1,28 +1,13 @@
 import './App.css'; //Import src/App.css; "." quer dizer "pasta atual"
-import HelloWorld from './components/HelloWorld';
-import Soma from './components/Soma';
-import SayMyName from './components/SayMyName';
-import Pessoa from  './components/Pessoa';
-import Frase from "./components/Frase"
-import List from "./components/List"
+import Evento from './components/Evento';
 
 function App() {
 
   const name = "Julinha"
   return (
     <div className='App'>
-      <Frase/>
-
-      <Soma n1={5} n2={23}/>
-
-      <Pessoa 
-      nome="Thomas" 
-      idade="19" 
-      profissao="Programador Sênior"
-      foto="https://via.placeholder.com/150" />
-
-      <List/>
-
+      <h1>Testando Eventos</h1>
+      <Evento/>
     </div>
   );
 }
