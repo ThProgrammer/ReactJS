@@ -4,11 +4,9 @@ import Forms from './components/Forms'
 
 function App() {
 
-  const name = "Ana Campoy"
   return (
+
     <div className='App'>
-      <h1>Testando Eventos</h1>
-      <Evento/>
       <Forms/>
     </div>
   );
