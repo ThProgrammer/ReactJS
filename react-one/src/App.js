@@ -1,14 +1,19 @@
 import './App.css'; //Import src/App.css; "." quer dizer "pasta atual"
-import Evento from './components/Evento';
-import Forms from './components/Forms'
-import Condicional from './components/Condicional'
+import OutraLista from './components/OutraLista';
+
 
 function App() {
+
+  const meusItens = ["React", "JavaScript", "Banco de dados"]
 
   return (
 
     <div className='App'>
-      <Condicional />
+      
+    <OutraLista itens={meusItens}/>
+
+    <OutraLista itens={[]}/>
+
     </div>
   );
 }
