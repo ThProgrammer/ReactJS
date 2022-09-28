@@ -1,0 +1,9 @@
+.rodape {
+    position: absolute;
+    bottom: 0;
+    background-color: blue;
+    width: 100%;
+    color: white;
+    border: 5px solid purple
+}
+

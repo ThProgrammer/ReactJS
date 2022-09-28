@@ -1,8 +1,10 @@
+import styles from "./Footer.module.css"
+
 function Footer () {
     return(
-        <footer>
-            &copy; <p>ThDev</p>
-        </footer>
+        <div className={styles.rodape}>
+            <p className={styles.escrita}>&copy;ThDev</p>
+        </div>
     )
 }
 
