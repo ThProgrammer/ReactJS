@@ -1,21 +1,36 @@
-import './App.css'; //Import src/App.css; "." quer dizer "pasta atual"
-import OutraLista from './components/OutraLista';
+import "./App.css";
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 
+import Home from "./pages/Home"
+import Empresa from "./pages/Empresa"
+import Contato from "./pages/Contato"
+import Error from "./pages/Error"
+import NavBar from "./layout/NavBar";
+import Footer from "./layout/Footer";
 
 function App() {
 
-  const meusItens = ["React", "JavaScript", "Banco de dados"]
-
   return (
+    <Router>
 
-    <div className='App'>
-      
-    <OutraLista itens={meusItens}/>
+      <NavBar/>
 
-    <OutraLista itens={[]}/>
+      <Routes>
 
-    </div>
-  );
+        <Route exact path="/" element={<Home/>}/>
+
+        <Route path="/empresa" element={<Empresa/>}/>
+
+        <Route path="/contato" element={<Contato/>}/>
+
+        <Route path="*" element={<Error/>}/>
+
+      </Routes>
+
+      <Footer/>
+
+    </Router>
+  )
 }
 
 export default App;

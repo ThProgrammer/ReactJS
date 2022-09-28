@@ -10,6 +10,7 @@ function Evento() {
         console.log("Segundo evento!")
     }
     
+    // Não entendendo porque fazer esse código (passar funções pelo props.)
     return (
         <>
             <p>Clique para disparar um evento:</p>
